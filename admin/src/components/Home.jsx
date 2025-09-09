@@ -1,13 +1,16 @@
 import React from 'react';
 import { Outlet, useNavigate, Link } from 'react-router-dom';
 import {
+  FaThLarge ,
   FaTachometerAlt,
   FaBoxOpen,
   FaShoppingCart,
   FaUsers,
-  FaCcVisa,
-  FaSignOutAlt
+  FaCreditCard,
+  FaWallet,
+  FaSignOutAlt,
 } from 'react-icons/fa';
+import { RxDashboard } from "react-icons/rx";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -29,7 +32,7 @@ const Home = () => {
             to="/"
             className="flex items-center text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md transition"
           >
-            <FaTachometerAlt className="mr-3" />
+            <RxDashboard className="mr-3" />
             Dashboard
           </Link>
           <Link
@@ -57,7 +60,7 @@ const Home = () => {
             to="#"
             className="flex items-center text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md transition"
           >
-            <FaCcVisa className="mr-3" />
+            <FaWallet className="mr-3" />
             Payments
           </Link>
           <button
